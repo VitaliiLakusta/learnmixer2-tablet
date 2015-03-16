@@ -68,6 +68,15 @@ public class MainActivity extends ActionBarActivity {
         });
         ViewGroup layout = (ViewGroup) findViewById(R.id.linearRange);
         layout.addView(seekBar);
+
+        if (findViewById(R.id.fragment_placeholder) != null) {
+            if (savedInstanceState != null) {
+                return;
+            }
+
+            LearningResourcesFragment resourcesFragment = new LearningResourcesFragment();
+            getSupportFragmentManager().beginTransaction().add(R.id.fragment_placeholder, resourcesFragment).commit();
+        }
     }
 
 
