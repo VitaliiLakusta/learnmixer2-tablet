@@ -5,10 +5,23 @@
     android:orientation="vertical"
     tools:context="com.learning.vitaliylakusta.learnmixer1_phone.LearningResourcesFragment">
 
-    <ListView android:id="@+id/resourceTitle" android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/suggested_learning_resources_title"
+        android:layout_marginBottom="15dp"
+        android:padding="9dp"
+        android:id="@+id/textView7" />
 
-    <TextView android:id="@android:id/empty" android:layout_width="match_parent"
-        android:layout_height="match_parent" android:gravity="center" />
+    <ListView android:id="@+id/resourcesListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCloseFragment"
+        android:text="CLOSE"/>
 
 </LinearLayout>
